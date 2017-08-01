@@ -1,99 +1,18 @@
 # Code Book
 
-This code book summarizes the resulting data fields in `tidy.txt`.
+The files that were used to load data are listed as follows:
 
-## Identifiers
+*test/subject_test.txt
+*test/X_test.txt
+*test/y_test.txt
+*train/subject_train.txt
+*train/X_train.txt
+*train/y_train.txt
 
-* `subject` - The ID of the test subject
-* `activity` - The type of activity performed when the corresponding measurements were taken
 
-## Measurements
-
-* `tBodyAccMeanX`
-* `tBodyAccMeanY`
-* `tBodyAccMeanZ`
-* `tBodyAccStdX`
-* `tBodyAccStdY`
-* `tBodyAccStdZ`
-* `tGravityAccMeanX`
-* `tGravityAccMeanY`
-* `tGravityAccMeanZ`
-* `tGravityAccStdX`
-* `tGravityAccStdY`
-* `tGravityAccStdZ`
-* `tBodyAccJerkMeanX`
-* `tBodyAccJerkMeanY`
-* `tBodyAccJerkMeanZ`
-* `tBodyAccJerkStdX`
-* `tBodyAccJerkStdY`
-* `tBodyAccJerkStdZ`
-* `tBodyGyroMeanX`
-* `tBodyGyroMeanY`
-* `tBodyGyroMeanZ`
-* `tBodyGyroStdX`
-* `tBodyGyroStdY`
-* `tBodyGyroStdZ`
-* `tBodyGyroJerkMeanX`
-* `tBodyGyroJerkMeanY`
-* `tBodyGyroJerkMeanZ`
-* `tBodyGyroJerkStdX`
-* `tBodyGyroJerkStdY`
-* `tBodyGyroJerkStdZ`
-* `tBodyAccMagMean`
-* `tBodyAccMagStd`
-* `tGravityAccMagMean`
-* `tGravityAccMagStd`
-* `tBodyAccJerkMagMean`
-* `tBodyAccJerkMagStd`
-* `tBodyGyroMagMean`
-* `tBodyGyroMagStd`
-* `tBodyGyroJerkMagMean`
-* `tBodyGyroJerkMagStd`
-* `fBodyAccMeanX`
-* `fBodyAccMeanY`
-* `fBodyAccMeanZ`
-* `fBodyAccStdX`
-* `fBodyAccStdY`
-* `fBodyAccStdZ`
-* `fBodyAccMeanFreqX`
-* `fBodyAccMeanFreqY`
-* `fBodyAccMeanFreqZ`
-* `fBodyAccJerkMeanX`
-* `fBodyAccJerkMeanY`
-* `fBodyAccJerkMeanZ`
-* `fBodyAccJerkStdX`
-* `fBodyAccJerkStdY`
-* `fBodyAccJerkStdZ`
-* `fBodyAccJerkMeanFreqX`
-* `fBodyAccJerkMeanFreqY`
-* `fBodyAccJerkMeanFreqZ`
-* `fBodyGyroMeanX`
-* `fBodyGyroMeanY`
-* `fBodyGyroMeanZ`
-* `fBodyGyroStdX`
-* `fBodyGyroStdY`
-* `fBodyGyroStdZ`
-* `fBodyGyroMeanFreqX`
-* `fBodyGyroMeanFreqY`
-* `fBodyGyroMeanFreqZ`
-* `fBodyAccMagMean`
-* `fBodyAccMagStd`
-* `fBodyAccMagMeanFreq`
-* `fBodyBodyAccJerkMagMean`
-* `fBodyBodyAccJerkMagStd`
-* `fBodyBodyAccJerkMagMeanFreq`
-* `fBodyBodyGyroMagMean`
-* `fBodyBodyGyroMagStd`
-* `fBodyBodyGyroMagMeanFreq`
-* `fBodyBodyGyroJerkMagMean`
-* `fBodyBodyGyroJerkMagStd`
-* `fBodyBodyGyroJerkMagMeanFreq`
-
-## Activity Labels
-
-* `WALKING` (value `1`): subject was walking during the test
-* `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
-* `WALKING_DOWNSTAIRS` (value `3`): subject was walking down a staircase during the test
-* `SITTING` (value `4`): subject was sitting during the test
-* `STANDING` (value `5`): subject was standing during the test
-* `LAYING` (value `6`): subject was laying down during the test
+Activity, Subject and Features as part of descriptive variable names for data in data frame:
+-> Values of Varible Activity consist of data from “Y_train.txt” and “Y_test.txt”
+->values of Varible Subject consist of data from “subject_train.txt” and subject_test.txt"
+->Values of Varibles Features consist of data from “X_train.txt” and “X_test.txt”
+->Names of Varibles Features come from “features.txt”
+->levels of Varible Activity come from “activity_labels.txt”
